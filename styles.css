@@ -5,13 +5,10 @@ body {
 	font-family: arial, sans-serif;
 }
 
-/* The parent container will only take up the width that
-its children require to display properly
-thanks to inline-flex */
-
 .flex-container {
 	display: inline-flex;
-	border:solid 4px #000;
+	flex-direction: column-reverse;
+	border: solid 4px #000;
 }
 
 .flex-item {
@@ -36,4 +33,4 @@ thanks to inline-flex */
 .flex-item strong {
 	display: block;
 	font-size: 130%;
-}
+}	
