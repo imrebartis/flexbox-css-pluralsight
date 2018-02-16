@@ -7,17 +7,7 @@ body {
 
 .flex-container {
 	display: flex;
-	/* this is the default: */
-	flex-wrap: nowrap;
-	/*flex-wrap: wrap;*/
-	/*flex-wrap: wrap-reverse;*/
-	/*flex-direction: column;*/
-	/*flex-direction: column-reverse;*/
-	/* shorthand for flex-wrap: wrap & flex-direction: column: */
-	/* flex-flow: column wrap; */
 	border: solid 4px #000;
-	width: 55%;
-	height: 30em;
 }
 
 .flex-item {
@@ -25,8 +15,6 @@ body {
 	font-size: 1.2em;
 	padding: 1em;
 	text-align: center;
-	opacity: 0.8;
-	width: 5em;
 }
 
 .flex-item-01 {
@@ -35,6 +23,10 @@ body {
 
 .flex-item-02 {
 	background-color: #9BC850;
+	/* placing element to the end of the row: */
+	order: 1;
+	/* placing element to the beginning of the row: */
+    /*order: -1;*/
 }
 
 .flex-item-03 {
@@ -43,6 +35,10 @@ body {
 
 .flex-item-04 {
 	background-color: #2A9FBC;
+	/* default place of the element: */
+    order: 0;
+    /*order: 1;*/
+    /*order: -1;*/
 }
 
 .flex-item-05 {
@@ -58,7 +54,7 @@ body {
 }
 
 .flex-item-08 {
-	background-color: #2A9FBC;
+	background-color: #F15B2A;
 }
 
 .flex-item strong {
