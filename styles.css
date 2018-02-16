@@ -15,6 +15,8 @@ body {
 	font-size: 1.2em;
 	padding: 1em;
 	text-align: center;
+	/* setting the items to be of same size: */
+    flex-grow: 1;
 }
 
 .flex-item-01 {
@@ -23,10 +25,8 @@ body {
 
 .flex-item-02 {
 	background-color: #9BC850;
-	/* placing element to the end of the row: */
-	order: 1;
-	/* placing element to the beginning of the row: */
-    /*order: -1;*/
+	/* setting this item to be 4 times bigger the others */
+    flex-grow: 4;
 }
 
 .flex-item-03 {
@@ -35,26 +35,6 @@ body {
 
 .flex-item-04 {
 	background-color: #2A9FBC;
-	/* default place of the element: */
-    order: 0;
-    /*order: 1;*/
-    /*order: -1;*/
-}
-
-.flex-item-05 {
-	background-color: #F15B2A;
-}
-
-.flex-item-06 {
-	background-color: #9BC850;
-}
-
-.flex-item-07 {
-	background-color: #A62E5C;
-}
-
-.flex-item-08 {
-	background-color: #F15B2A;
 }
 
 .flex-item strong {
