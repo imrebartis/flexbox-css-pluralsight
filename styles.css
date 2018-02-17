@@ -8,6 +8,7 @@ body {
 .flex-container {
 	display: flex;
 	border: solid 4px #000;
+	width: 32.4%;
 }
 
 .flex-item {
@@ -15,14 +16,13 @@ body {
 	font-size: 1.2em;
 	padding: 1em;
 	text-align: center;
-    flex-grow: 1;
+	opacity: 0.8;
+	/* flex-grow flex-shrink flex-basis: */
+	flex: 0 0 auto;
 }
 
 .flex-item-01 {
 	background-color: #A62E5C;
-	/* starts at 10em and adds the same portion of extra space
-	as the others */
-    flex-basis: 10em;
 }
 
 .flex-item-02 {
