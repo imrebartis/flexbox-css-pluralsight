@@ -15,14 +15,14 @@ body {
 	font-size: 1.2em;
 	padding: 1em;
 	text-align: center;
-    width: 15em;
+    flex-grow: 1;
 }
 
 .flex-item-01 {
 	background-color: #A62E5C;
-	/*flex-shrink: 2;*/
-	/* Maintains its original size while the other items shrink: */
-    flex-shrink: 0;
+	/* starts at 10em and adds the same portion of extra space
+	as the others */
+    flex-basis: 10em;
 }
 
 .flex-item-02 {
