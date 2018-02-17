@@ -15,18 +15,18 @@ body {
 	font-size: 1.2em;
 	padding: 1em;
 	text-align: center;
-	/* setting the items to be of same size: */
-    flex-grow: 1;
+    width: 15em;
 }
 
 .flex-item-01 {
 	background-color: #A62E5C;
+	/*flex-shrink: 2;*/
+	/* Maintains its original size while the other items shrink: */
+    flex-shrink: 0;
 }
 
 .flex-item-02 {
 	background-color: #9BC850;
-	/* setting this item to be 4 times bigger the others */
-    flex-grow: 4;
 }
 
 .flex-item-03 {
