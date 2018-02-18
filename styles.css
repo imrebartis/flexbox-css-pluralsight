@@ -8,15 +8,8 @@ body {
 .flex-container {
 	display: flex;
 	border: solid 4px #000;
-	height: 36.72em;
-	/* align at the top of the container: */
-    /* align-items: flex-start; */
-    /* align-items: flex-end; */
-	align-items: center;
-	/* align the text of the items using the baseline value: */
-    /* align-items: baseline; */
-    /* align-items: stretch; */
-    /* flex-direction: column; */
+    height: 36.72em;
+    align-items: center;
 }
 
 .flex-item {
@@ -34,19 +27,24 @@ body {
 	background-color: #9BC850;
     padding-top: 2em;
     padding-bottom: 2em;
+    align-self: flex-start;
 }
 
 .flex-item-03 {
 	background-color: #675BA7;
-    padding: 4em 3em;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    align-self: flex-end;
 }
 
 .flex-item-04 {
 	background-color: #2A9FBC;
-    padding: 3em 2em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    align-self: stretch;
 }
 
 .flex-item strong {
 	display: block;
-	font-size: 130%;  
+	font-size: 130%;
 }	
