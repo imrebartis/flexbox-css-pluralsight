@@ -22,3 +22,8 @@ body {
 .item:nth-child(even) {
 	background-color: #9BC850;
 }
+
+.item:first-child {
+	/* flex-grow flex-shrink flex-basis: */
+    flex: 0 0 50%;
+}
