@@ -6,8 +6,17 @@ body {
 }
 
 body {
+    padding: 1em;
+}
+
+.container {
+    border: solid 4px #000;
     display: flex;
     padding: 1em;
+    height: 20em;
+    /* align-items: flex-start; */
+    align-items: flex-end;
+    /* align-items: center; */
 }
 
 .item {
@@ -23,7 +32,6 @@ body {
 	background-color: #9BC850;
 }
 
-.item:first-child {
-	/* flex-grow flex-shrink flex-basis: */
-    flex: 0 0 50%;
+.item:nth-child(2) {
+    flex: 1 1 40%;
 }
