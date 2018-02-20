@@ -9,9 +9,7 @@ body {
 	border: solid 4px #000;
     display: inline-grid;
     grid-template-columns: 10em 6em 6em 6em;
-	grid-template-rows: 6em 6em;
-	/* items flow top to bottom & then left to right: */
-    grid-auto-flow: column;
+    grid-template-rows: 6em 6em;
 }
 
 .grid-item {
@@ -29,10 +27,8 @@ body {
 
 .grid-item-02 {
 	background-color: #9BC850;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 2;
+	/* moving the item to the beginning: */
+    order: -1;
 }
 
 .grid-item-03 {
