@@ -27,8 +27,7 @@ body {
 
 .grid-item-02 {
 	background-color: #9BC850;
-	/* moving the item to the beginning: */
-    order: -1;
+    /*order: 1;*/
 }
 
 .grid-item-03 {
@@ -49,6 +48,16 @@ body {
 
 .grid-item-07 {
 	background-color: #A62E5C;
+}
+
+/* items 8 & 9 are placed into the same grid as the others, even if
+they are outside the grid created above */
+.grid-item-08 {
+	background-color: #9BC850;
+}
+
+.grid-item-09 {
+	background-color: #2A9FBC;
 }
 
 .grid-item strong {
