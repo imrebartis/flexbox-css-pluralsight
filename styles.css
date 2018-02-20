@@ -7,47 +7,30 @@ body {
 
 .grid-container {
 	border: solid 4px #000;
-	/* taking up only as much space as items need: */
-	/* display: inline-grid; */
-	display: grid;
+	display: inline-grid;
+	/* the 1em things here are the gutters: */
     grid-template-columns: 6em 1em 6em 1em 6em 1em 6em;
 }
 
 .grid-item {
+    background-color: #A62E5C;
 	color: #fff;
     box-sizing: border-box;
 	font-size: 1.2em;
 	padding: 1em;
+    overflow: hidden;
 	text-align: center;
-}
-
-.grid-item-01 {
-	background-color: #A62E5C;
-}
-
-.grid-item-02 {
-	background-color: #9BC850;
-}
-
-.grid-item-03 {
-	background-color: #675BA7;
-}
-
-.grid-item-04,
-.grid-item-08 {
-	background-color: #2A9FBC;
-}
-
-.grid-item-05 {
-	background-color: #F15B2A;
-}
-
-.grid-item-06 {
-	background-color: #675BA7;
-}
-
-.grid-item-07 {
-	background-color: #A62E5C;
+    /* grid-column-start: 1;
+	grid-column-end: 2; */
+	/* placing the item into the first gutter: */
+    /* grid-column-start: 2;
+	grid-column-end: 3; */
+	/* Placing the item into the 2nd column: */
+    /* grid-column-start: 3;
+	grid-column-end: 4; */
+	/* Item spans two columns: */
+    grid-column-start: 3;
+    grid-column-end: 6;
 }
 
 .grid-item strong {
