@@ -7,9 +7,9 @@ body {
 
 .grid-container {
 	border: solid 4px #000;
-    display: inline-grid;
-    grid-template-columns: 10em 6em 6em 6em;
-    grid-template-rows: 6em 6em;
+	display: inline-grid;
+	/* grid shorthand: grid-template-rows / grid-template-columns: */
+    grid: 6em 6em / 10em 6em 6em 6em;
 }
 
 .grid-item {
@@ -27,7 +27,6 @@ body {
 
 .grid-item-02 {
 	background-color: #9BC850;
-    /*order: 1;*/
 }
 
 .grid-item-03 {
@@ -50,8 +49,6 @@ body {
 	background-color: #A62E5C;
 }
 
-/* items 8 & 9 are placed into the same grid as the others, even if
-they are outside the grid created above */
 .grid-item-08 {
 	background-color: #9BC850;
 }
