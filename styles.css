@@ -5,62 +5,91 @@ body {
 	font-family: arial, sans-serif;
 }
 
-.grid-container {
-	border: solid 4px #000;
-    display: inline-grid;
-    height: 30em;
-    grid: repeat(2, 10em) / repeat(4, 8.5em);
-    align-content: center;
-    justify-items: start;
+body {
+    padding: 1em;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
 }
 
 .grid-item {
 	color: #fff;
     box-sizing: border-box;
-	font-size: 1.2em;
+	font-size: 1em;
 	padding: 1em;
     overflow: hidden;
 	text-align: center;
 }
 
-.grid-item-01 {
+.grid-item-header {
     background-color: #A62E5C;
+    grid-area: header;
 }
 
-.grid-item-02 {
-	background-color: #9BC850;
+.grid-item-navigation {
+    background-color: #9BC850;
+    grid-area: navigation;
 }
 
-.grid-item-03 {
-	background-color: #675BA7;
+.grid-item-content {
+    background-color: #9BC850;
+    grid-area: content;
 }
 
-.grid-item-04 {
-	background-color: #2A9FBC;
+.grid-item-sidebar {
+    background-color: #9BC850;
+    grid-area: sidebar;
 }
 
-.grid-item-05 {
-	background-color: #F15B2A;
+.grid-item-footer {
+    background-color: #A62E5C;
+    grid-area: footer;
 }
 
-.grid-item-06 {
-	background-color: #675BA7;
-    align-self: end;
+.grid-container {
+    display: grid;
+    height: calc(100vh - 2em);
+    grid: 20% 1em 1fr 1em 20% / 7.4em 1em 1fr 1em 7.4em;
+    grid-template-areas: 
+    "header header header header header"
+    ". . . . ."
+    "navigation . content . sidebar"
+    ". . . . ."
+	"footer footer footer footer footer";
 }
 
-.grid-item-07 {
-	background-color: #A62E5C;
+/* @media screen and (max-width: 590px) {
+    
+    .grid-container {
+        grid: 1fr 1em 30% / 4.4em 1em 3.6em 1em 1fr 1em 4.4em;
+        grid-template-areas:
+        "header header header"
+        ". . ."
+        "navigation navigation navigation"
+        ". . ."
+        "content . sidebar"
+        ". . ."
+        "footer footer footer";
+    }
+    
 }
 
-.grid-item-08 {
-	background-color: #9BC850;
-}
-
-.grid-item-09 {
-	background-color: #2A9FBC;
-}
-
-.grid-item strong {
-	display: block;
-	font-size: 130%;  
-}	
+@media screen and (max-width: 450px) {
+    
+    .grid-container {
+        grid: 1fr / 4.4em 1em 3.6em 1em 1fr 1em 3.6em 1em 4.4em;
+        grid-template-areas:
+        "header"
+        "."
+        "navigation"
+        "."
+        "content"
+        "."
+        "sidebar"
+        "."
+        "footer"
+    }
+    
+} */
