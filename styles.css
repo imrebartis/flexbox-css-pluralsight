@@ -14,6 +14,13 @@ h1 {
     padding: 0;
 }
 
+.grid-container {
+    display: grid;
+    height: calc(100vh - 2em);
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-flow: dense;
+}
+
 .grid-item {
 	color: #fff;
     box-sizing: border-box;
@@ -25,71 +32,33 @@ h1 {
 
 .grid-item-header {
     background-color: #A62E5C;
-    grid-area: header;
+    grid-column: span 4;
 }
 
-.grid-item-navigation {
-    background-color: #9BC850;
-    grid-area: navigation;
+.gallery-item {
+    font-size: 0;
+    line-height: 0;
+    position: relative;
 }
 
-.grid-item-content {
-    background-color: #9BC850;
-    grid-area: content;
+.gallery-item-wide {
+    grid-column: span 2;
 }
 
-.grid-item-sidebar {
-    background-color: #9BC850;
-    grid-area: sidebar;
+.gallery-item-label {
+    background: rgba(155, 200, 80, 0.8);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 6px 12px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
 }
 
-.grid-item-footer {
-    background-color: #A62E5C;
-    grid-area: footer;
+.gallery-item img {
+    height: auto;
+    width: 100%;
 }
-
-.grid-container {
-    display: grid;
-    height: calc(100vh - 2em);
-    grid: 20% 1em 1fr 1em 20% / 7.4em 1em 1fr 1em 7.4em;
-    grid-template-areas: 
-    "header header header header header"
-    ". . . . ."
-    "navigation . content . sidebar"
-    ". . . . ."
-	"footer footer footer footer footer";
-}
-
-/* @media screen and (max-width: 590px) {
-    
-    .grid-container {
-        grid: 1fr 1em 30% / 4.4em 1em 3.6em 1em 1fr 1em 4.4em;
-        grid-template-areas:
-        "header header header"
-        ". . ."
-        "navigation navigation navigation"
-        ". . ."
-        "content . sidebar"
-        ". . ."
-        "footer footer footer";
-    }
-    
-}
-
-@media screen and (max-width: 450px) {
-    
-    .grid-container {
-        grid: 1fr / 4.4em 1em 3.6em 1em 1fr 1em 3.6em 1em 4.4em;
-        grid-template-areas:
-        "header"
-        "."
-        "navigation"
-        "."
-        "content"
-        "."
-        "sidebar"
-        "."
-        "footer"
-    }
-    
-} */
