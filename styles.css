@@ -8,9 +8,10 @@ body {
 .grid-container {
 	border: solid 4px #000;
     display: inline-grid;
-    /*grid-template-columns: 6em 6em 6em 6em;*/
     grid-template-columns: 10em 6em 6em 6em;
-    grid-template-rows: 6em 6em;
+	grid-template-rows: 6em 6em;
+	/* items flow top to bottom & then left to right: */
+    grid-auto-flow: column;
 }
 
 .grid-item {
@@ -28,6 +29,10 @@ body {
 
 .grid-item-02 {
 	background-color: #9BC850;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 
 .grid-item-03 {
@@ -49,7 +54,6 @@ body {
 .grid-item-07 {
 	background-color: #A62E5C;
 }
-
 
 .grid-item strong {
 	display: block;
