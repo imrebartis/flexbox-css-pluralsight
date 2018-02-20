@@ -5,35 +5,52 @@ body {
 	font-family: arial, sans-serif;
 }
 
-body {
-    padding: 1em;
+.grid-container {
+	border: solid 4px #000;
+	/* taking up only as much space as items need: */
+	/* display: inline-grid; */
+	display: grid;
+    grid-template-columns: 6em 1em 6em 1em 6em 1em 6em;
 }
 
-a {
-    text-decoration: none;
-}
-
-h1 {
-    padding-top: 2em;
-}
-
-.buttons {
-    display: flex;
-}
-
-.button {
-    background-color: #9BC850;
-    border-radius: 8px;
-    box-sizing: border-box;
+.grid-item {
 	color: #fff;
-    display: block;
+    box-sizing: border-box;
 	font-size: 1.2em;
-    margin: 0 1em 0.3em 0;
-	padding: 0.5em 1em;
-    text-align: center;
-    flex: 1;
+	padding: 1em;
+	text-align: center;
 }
 
-.button-admin {
+.grid-item-01 {
 	background-color: #A62E5C;
 }
+
+.grid-item-02 {
+	background-color: #9BC850;
+}
+
+.grid-item-03 {
+	background-color: #675BA7;
+}
+
+.grid-item-04,
+.grid-item-08 {
+	background-color: #2A9FBC;
+}
+
+.grid-item-05 {
+	background-color: #F15B2A;
+}
+
+.grid-item-06 {
+	background-color: #675BA7;
+}
+
+.grid-item-07 {
+	background-color: #A62E5C;
+}
+
+.grid-item strong {
+	display: block;
+	font-size: 130%;  
+}	
