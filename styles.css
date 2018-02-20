@@ -16,7 +16,13 @@ img {
     width: 100%;
 }
 
-.media-item-title {
+.media-item-title,
+.media-item-thumb,
+.media-item-content {
+    border: solid 1px red;
+}
+
+.media-item-title { 
     grid-area: title;
 }
 
@@ -29,14 +35,11 @@ img {
 }
 
 .media-container {
-    display: grid;
-	grid: 8em 1em 1fr / auto 1em auto;
-	/* having the title section on one row
-	stretching the width of the grid: */
-	grid-template-areas: "title title title"
-						/* empty gutter: */
-						 ". . ."
-		/* thumbnail take up first column
-		then 1 column for the gutter (the period) */
+	display: grid;
+	/* setting a row for dynamic content
+	(second auto): */
+    grid: 8em 1em 1fr / auto 1em auto;
+    grid-template-areas: "title title title"
+                         ". . ."
                          "thumbnail . content";
 }
